@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<!-- saved from url=(0073)file:///C:/Users/Administrator/AppData/Local/Temp/MarkdownPadPreview.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<title>MarkdownPad Document</title>
+
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<p>第十二周。</p>
+<p>2012\5\13 周日</p>
+<p>我曾经每天吃药吃到要吐。</p>
+<p>只能睡很浅很浅的觉，做冗长的梦，梦里我一直在奔跑。</p>
+<p>在阴天的时候会有一场激烈的头痛。</p>
+<p>那段时间我特信佛。</p>
+<p>因为除了我自己，没有人知道那是一段怎么样的时光。</p>
+<p>从我那时知世至今，我都是在矛盾中走过来的。</p>
+<p>感激过一些人，又恨过一些人。</p>
+<p>只是感激的没有一直感激到最后，恨的人也没有一直恨到最后。</p>
+<p>今天陪妈妈过了母亲节。</p>
+<p>在见面之前给妈妈买了一个杯子，给外婆买了一个包。</p>
+<p>给后妈买了一个钱夹，给爸爸买了一个冰枕。</p>
+<p>原因如下。</p>
+<p>妈妈店面冰箱上的茶杯已有些历史。</p>
+<p>外婆总希望有个巴掌大的小包装零钱。</p>
+<p>后妈少言语但母亲节她也该过。</p>
+<p>爸爸开车的时候车里面会很热把冰枕垫屁股底下会比较凉快。</p>
+<p>他们都是我的寄托。</p>
+<p>很多很多时候，一个寄托就是存活的理由。</p>
+<p>妈妈带我去换了一身装备，从头到脚并为我剪了头发。</p>
+<p>可惜的是鞋子才穿半天就把脚后跟磨出了两个大泡。</p>
+<p>还好同学给了我两张创可贴，贴在泡上面，才让我一瘸一拐地回了家。</p>
+<p>听说这几天贴吧老被爆，对于这类事我已无心管了。</p>
+<p>喜欢与生存有着同样的道理，同样只有一个字，就是忍。</p>
+<p>音乐是我男朋友，因此与他有关的事就是忍得过来就白头。</p>
+<p>尽管我眼里不想掺一丝一毫的沙子，但我更不想和他分手。</p>
+<p>看，一会儿就海阔天空了。</p>
+<p>你们都放宽心。</p>
+<p>我知道你们都很辛苦。</p>
+<p>2012\5\14 周一</p>
+<p>《哈姆雷特》里面有句话是。</p>
+<p>即使把我放在火柴盒里，我也是无限空间的主宰者。</p>
+<p>今天是情人节，也是许嵩的生日。</p>
+<p>我这一生最大的梦想就是能在临终的时候跟他说我爱了他一辈子。</p>
+<p>中午回家的时候把一切都更新了。</p>
+<p>心里乱的时候就会换头像、网名、个人说明、留言板寄语以及手机主题。</p>
+<p>焕然一新的东西总是容易转移我的注意力。</p>
+<p>下午做了一件冲动的事。</p>
+<p>当看到王默兮在谢辉空间留言的时候，忍不住就对她做了过分的事。</p>
+<p>凉兮说得对，虚伪这个罪名无论对谁都太重了。</p>
+<p>我该对她说抱歉。</p>
+<p>我真的是个自私幼稚的人，要朋友记着我，然后我遗忘掉朋友。</p>
+<p>默兮，我们只是两个想去天堂的人，却不知道路怎么走。</p>
+<p>我们不是老马，还不会识途。</p>
+<p>只怪时间改变了人的心，而心从来不会对一个人说谎。</p>
+<p>我们都要诚实，在以后。</p>
+<p>2012\5\15 周二</p>
+<p>五月中旬了。</p>
+<p>今天突然想掏心挖肺地絮叨几句。</p>
+<p>其实我从来没有奢望过任何人能听见我内心的声音，拯救我。</p>
+<p>这样美好的事情不可能发生在我身上我知道。</p>
+<p>我只有一种感觉，像个小怪兽一样时常坐在你我之间。</p>
+<p>你看不见我看得见。</p>
+<p>我想现在如果不握紧你的手的话，你就会在我面前消失掉。</p>
+<p>我们的城堡地基打得并不稳，似乎一点风吹草动都可以让它随之坍塌。</p>
+<p>但一切都还是未知数。</p>
+<p>相信时间会给我们答案。</p>
+<p>记得我第一次坐缆车的时候，满面红光，心情也显得过分喜气洋洋。</p>
+<p>在缙云山。</p>
+<p>我清晰地记得上缆车时我还有半边身子悬在空中。</p>
+<p>再加之那缆车前面的镜片不见了，心里的恐惧排山倒海地涌来。</p>
+<p>我想，不会是这缆车坠毁过吧。- -</p>
+<p>安安稳稳地坐在车厢里，一直不停不停笑。</p>
+<p>看着天空，指着白云尖叫。</p>
+<p>我不知道那时候我是怎么想的。- -</p>
+<p>像个小疯子。</p>
+<p>缆车下降了，直线了。</p>
+<p>回头看，竟然是垂直的幅度，那么高的山!</p>
+<p>一阵感叹，把手伸出窗外摘桔子。哈哈哈!</p>
+<p>那个时候我还不懂太多太多东西。</p>
+<p>有的人生只有爱，有的人生不仅有爱还有生活。</p>
+<p>人一生可以爱很多很多人，可最后选择在一起的只有一个。</p>
+<p>在爱的不等式里，有很多人的爱，是天生用来被毁的。</p>
+<p>只需活在当下，别让多虑拖住了你的步伐。</p>
+<p>2012\5\16 周三</p>
+<p>人可以同时拥有两份感情吗?</p>
+<p>习惯和一个人在一起，但又喜欢另一个人。</p>
+<p>一个硬币可以立在刀刃上吗?</p>
+<p>我不想再躲在角落里了。</p>
+<p>今早四点多的样子发生了一件惊心动魄的事情。</p>
+<p>我在迷糊中被小姨叫醒，她说快起来把防盗门反锁了，我出去一趟，车被偷了。</p>
+<p>一阵心悸，即刻清醒。</p>
+<p>我假装镇定地去锁门，家里除了我还有熟睡的妹妹。</p>
+<p>突然一阵电话铃声，我被吓了一跳但迅速接起来。</p>
+<p>是小姨，她说。</p>
+<p>没丢，找到了。</p>
+<p>我注意到她声音的颤抖，她在害怕，她还那么年轻。</p>
+<p>也许只有特殊时刻才能让人学会惺惺相惜。</p>
+<p>她回来拿车钥匙，我随她出门。</p>
+<p>在通往马路的小巷前有警车，小偷逃掉了。</p>
+<p>不知道是谁打了110，才得以及时拦截在小偷行进的路，留下车。</p>
+<p>最后回家，一直睡不着了。</p>
+<p>躺在床上我就在想。</p>
+<p>生活就是这样，不少的人会在你想不到的拐角处给你属于他们自己认定的那种帮助。</p>
+<p>有的善心并不是对方平时的锦上添花，而是关键时候的雪中送炭。</p>
+<p>心存感激。</p>
+<p>2012\5\17 周四</p>
+<p>现在的状态是趋于机器人状态，每天都是在埋头苦读。</p>
+<p>念了这么多年书，第一次这么近距离地接触到了压力这个词。</p>
+<p>老师的期盼，家人的指望。</p>
+<p>我不清楚到了高三我会不会被逼疯。</p>
+<p>这是我的预感。- -</p>
+<p>我的叛逆与孤僻在心底一次次与我叫嚣。</p>
+<p>我只想从命运中来，到命运中去，成为唯一的自己。</p>
+<p>我不想成为谁命悬一线的救星，他们永远不懂。</p>
+<p>我不是批判中国教育。</p>
+<p>我只是难过地看到这种填鸭式的教育葬送了无数人的梦想。</p>
+<p>我想继续唱歌创作，尽管在听他们看来这是不务正业、游戏人生。</p>
+<p>奶奶是我尊重的人，不置可否。</p>
+<p>但也是我不喜欢的人之一。</p>
+<p>我不喜欢她对着我的作品评头论足，不喜欢她把我的爱好践踏得一文不值。</p>
+<p>每次她对我这方面说三道四时我都会情绪谷底并与她争论不休，但每次都是她赢我妥协。</p>
+<p>她是善于对峙的人。</p>
+<p>善于对峙的人总能在这样那样的细枝末节里找到对自己有利的方向。</p>
+<p>年代的成长，生活的希望与绝望，都在社会的背景下越发欣欣向荣。</p>
+<p>你可以在上一秒尖酸刻薄地讽刺别人的真情流露。</p>
+<p>你也可以在下一秒真心实意地对别人嘘寒问暖。</p>
+<p>你可以在上一秒因无心之过伤害一个神经脆弱的人。</p>
+<p>你也可以在下一秒因无心之举拯救一颗已穷途末路的心。</p>
+<p>安全感在生活中潜伏，甚至可有可无，但其实每个人都心明到自己活得很忐忑。</p>
+<p>放下脚步去热爱你本该热爱的一切。</p>
+<p>如果你足够勇敢。</p>
+<p>2012\5\18 周五</p>
+<p>最近的我像是打开了回忆的闸门。</p>
+<p>来来回回地在里面折腾，好久好久都回不过神来。</p>
+<p>买了许多梅来吃。</p>
+<p>半边梅，话梅，酸梅还有橄榄片。</p>
+<p>明知道自己会过敏仍固执地一直吃，吃到把牙齿都全酸掉。</p>
+<p>果不其然。</p>
+<p>午休醒来之后脸上就出现了红色的小点。</p>
+<p>笑笑作罢。</p>
+<p>晚上和李振宇瞎扯，他喝了酒，说的话不知道清醒还是醉意满满。</p>
+<p>然后把歪歪的布局全部换了，清爽了不少。</p>
+<p>至少于我是如此。</p>
+<p>跟叶仕健开了语音。</p>
+<p>其实我一直以为我和他这辈子再也不会说话了，或者深交。</p>
+<p>但原来亲密从未远离，就像一个星球的人。</p>
+<p>还和黑马聊了很多作品方面的事，他的真诚坦率和善良让我很佩服。</p>
+<p>我也想成为他那样的人。</p>
+<p>感谢上帝赐予了我这些朋友和导师。</p>
+<p>我知道一个人活在这世上，需要的只是现在、明天和未来。</p>
+<p>但在这一刻请允许我祈求世界上真的有神明，听见我的愿望。</p>
+<p>我希望。</p>
+<p>好人们都与幸福并肩。</p>
+<p>2012\5\19 周六</p>
+<p>如果有一天我消失掉，一定是因为我过的不好所以躲起来。</p>
+<p>不想让你知道。</p>
+<p>今天是礼拜六，昨晚快到一点才入眠。</p>
+<p>今早七点多就自然醒了，生物钟的影响。</p>
+<p>看看手机，没有你的短信。</p>
+<p>笑笑，看来你差不多可以做到我期望的那样了，这是一个好的开端。</p>
+<p>你问，我们这样好吗?</p>
+<p>我的回答没有告诉你。</p>
+<p>既然我已经决定了要你这么做，肯定有百利而无一害。</p>
+<p>毫发与端倪，都是恋爱时的用心体验。</p>
+<p>感性的事不能太过越界。</p>
+<p>看得出来，你的感情神经开窍得比较晚。</p>
+<p>所以当这个神经开窍以后，整个人就只剩下这一根神经了。</p>
+<p>这样我就必须配合你，如同绕日运行的星辰，不眠不休。</p>
+<p>但这是你爱的方式并非我。</p>
+<p>一个大度的人会让身边的人都有着足够的空间游玩与享受。</p>
+<p>日子那般久远，唯有信任能让感情永恒。</p>
+<p>因此你要时刻铭记，时间这东西最不靠谱。</p>
+<p>它滴滴答答地快步向前，一点也不等人。</p>
+<p>你可以荒废度日，但我不允许你的以后碌碌无为。</p>
+<p>这是我的期望亦是你家人的期望。</p>
+<p>任性和优越都与我们是陌路客。</p>
+<p>头发长了要剪掉，多余的感情亦如此。</p>
+<p>说到底，我们都是芸芸众生中的普通人而已。</p>
+<p>别丧气，蜕变的钥匙终靠自己打磨。</p>
+<p>路还要走。</p>
+
+
+
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
+</body></html>
