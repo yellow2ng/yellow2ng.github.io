@@ -2,9 +2,7 @@
 
 ---
 
-### 丨Taste Div
-
-- [啊橙指数](http://yellow2ng.github.io/div/2ngindex.html)
+[啊橙指数](http://yellow2ng.github.io/div/2ngindex.html)  丨 [网站建设笔记]( https://yellow2ng.github.io/rdlog/rdlog.html ) 丨[网站建设笔记]( https://yellow2ng.github.io/rdlog/rdlog.html )
 
 
 
@@ -20,11 +18,7 @@
 
 
 
-### 丨建设笔记
 
-- [网站建设笔记]( https://yellow2ng.github.io/rdlog/rdlog.html )
-
-  
 
 
 
