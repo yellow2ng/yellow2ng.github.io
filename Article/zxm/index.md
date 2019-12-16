@@ -1,6 +1,6 @@
 ## 周小曼文章精选
 
-- [第1~9周文章](Article/zxm/week1-9.html)
+- [第1~9周文章]( https://yellow2ng.github.io/Article/zxm/week1-9.html )
 
 - [旅人如夏](Article/zxm/lvren.html)
 
