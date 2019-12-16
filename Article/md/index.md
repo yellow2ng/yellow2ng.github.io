@@ -1,8 +1,8 @@
-## 阅读_Article
+## 文章_Article
 
 
 
-### 丨文字
+### 丨阅读
 
 - [周小曼文章精选]( /Article/zxm/index.html )
 
@@ -15,6 +15,8 @@
 - [markdown语法]( /Article/markdown.html )
 
 - [内购上线大事记](/Article/neigoulog.html)
+
+- [飞行员常用词汇](/Article/flyerwords.html)
 
   
 

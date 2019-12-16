@@ -1,0 +1,243 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>flyerwords</title><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px !important; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none 0s ease 0s; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+
+
+:root { --side-bar-bg-color: #fff; --control-text-color: #777; }
+html { font-size: 14px; }
+body { color: rgb(52, 73, 94); -webkit-font-smoothing: antialiased; line-height: 1.6rem; letter-spacing: 0px; margin: 0px; overflow-x: hidden; font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif !important; }
+#write { max-width: 860px; margin: 0px auto; padding: 20px 30px 100px; }
+#write p { line-height: 1.6rem; word-spacing: 0.05rem; }
+#write ol li { text-indent: 0.5rem; }
+#write > ul:first-child, #write > ol:first-child { margin-top: 30px; }
+body > :first-child { margin-top: 0px !important; }
+body > :last-child { margin-bottom: 0px !important; }
+a { color: rgb(66, 185, 131); font-weight: 600; padding: 0px 2px; text-decoration: none; }
+h1, h2, h3, h4, h5, h6 { position: relative; margin-top: 1rem; margin-bottom: 1rem; font-weight: bold; line-height: 1.4; cursor: text; }
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor { text-decoration: none; }
+h1 tt, h1 code { font-size: inherit !important; }
+h2 tt, h2 code { font-size: inherit !important; }
+h3 tt, h3 code { font-size: inherit !important; }
+h4 tt, h4 code { font-size: inherit !important; }
+h5 tt, h5 code { font-size: inherit !important; }
+h6 tt, h6 code { font-size: inherit !important; }
+h2 a, h3 a { color: rgb(52, 73, 94); }
+h1 { padding-bottom: 0.4rem; font-size: 2.2rem; line-height: 1.3; }
+h2 { font-size: 1.75rem; line-height: 1.225; margin: 35px 0px 15px; padding-bottom: 0.5em; border-bottom: 1px solid rgb(221, 221, 221); }
+h3 { font-size: 1.4rem; line-height: 1.43; margin: 20px 0px 7px; }
+h4 { font-size: 1.2rem; }
+h5 { font-size: 1rem; }
+h6 { font-size: 1rem; color: rgb(119, 119, 119); }
+p, blockquote, ul, ol, dl, table { margin: 0.8em 0px; }
+li > ol, li > ul { margin: 0px; }
+hr { height: 2px; padding: 0px; margin: 16px 0px; background-color: rgb(231, 231, 231); border: 0px none; overflow: hidden; box-sizing: content-box; }
+body > h2:first-child { margin-top: 0px; padding-top: 0px; }
+body > h1:first-child { margin-top: 0px; padding-top: 0px; }
+body > h1:first-child + h2 { margin-top: 0px; padding-top: 0px; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child { margin-top: 0px; padding-top: 0px; }
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 { margin-top: 0px; padding-top: 0px; }
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p { margin-top: 0px; }
+li p.first { display: inline-block; }
+ul, ol { padding-left: 30px; }
+ul:first-child, ol:first-child { margin-top: 0px; }
+ul:last-child, ol:last-child { margin-bottom: 0px; }
+blockquote { border-left: 4px solid rgb(66, 185, 131); padding: 10px 15px; color: rgb(119, 119, 119); background-color: rgba(66, 185, 131, 0.1); }
+table { padding: 0px; word-break: initial; }
+table tr { border-top: 1px solid rgb(223, 226, 229); margin: 0px; padding: 0px; }
+table tr:nth-child(2n), thead { background-color: rgb(250, 250, 250); }
+table tr th { font-weight: bold; border-width: 1px 1px 0px; border-top-style: solid; border-right-style: solid; border-left-style: solid; border-top-color: rgb(223, 226, 229); border-right-color: rgb(223, 226, 229); border-left-color: rgb(223, 226, 229); border-image: initial; border-bottom-style: initial; border-bottom-color: initial; text-align: left; margin: 0px; padding: 6px 13px; }
+table tr td { border: 1px solid rgb(223, 226, 229); text-align: left; margin: 0px; padding: 6px 13px; }
+table tr th:first-child, table tr td:first-child { margin-top: 0px; }
+table tr th:last-child, table tr td:last-child { margin-bottom: 0px; }
+#write strong { padding: 0px 1px; }
+#write em { padding: 0px 5px 0px 2px; }
+#write table thead th { background-color: rgb(242, 242, 242); }
+#write .CodeMirror-gutters { border-right: none; }
+#write .md-fences { border: 1px solid rgb(244, 244, 244); -webkit-font-smoothing: initial; line-height: 1.43rem; border-radius: 2px; font-size: 0.85rem; overflow-wrap: normal; margin: 0.8rem 0px !important; padding: 0.3rem 0px !important; background-color: rgb(248, 248, 248) !important; font-family: "Roboto Mono", "Source Sans Pro", Monaco, courier, monospace !important; }
+#write .CodeMirror-wrap .CodeMirror-code pre { padding-left: 12px; }
+#write code, tt { margin: 0px 2px; padding: 2px 4px; border-radius: 2px; font-size: 0.92rem; color: rgb(233, 105, 0); background-color: rgb(248, 248, 248); font-family: "Roboto Mono", "Source Sans Pro", Monaco, courier, monospace !important; }
+#write .md-footnote { background-color: rgb(248, 248, 248); color: rgb(233, 105, 0); }
+#write mark { background-color: rgb(235, 255, 235); border-radius: 2px; padding: 2px 4px; margin: 0px 2px; color: rgb(34, 34, 34); font-weight: 500; }
+#write del { padding: 1px 2px; }
+.cm-s-inner .cm-link, .cm-s-inner.cm-link { color: rgb(34, 162, 201); }
+.cm-s-inner .cm-string { color: rgb(34, 162, 201); }
+.md-task-list-item > input { margin-left: -1.3em; }
+@media print {
+  html { font-size: 13px; }
+  table, pre { break-inside: avoid; }
+  pre { overflow-wrap: break-word; }
+}
+.md-fences { background-color: rgb(248, 248, 248); }
+#write pre.md-meta-block { padding: 1rem; font-size: 85%; line-height: 1.45; background-color: rgb(247, 247, 247); border: 0px; border-radius: 3px; color: rgb(119, 119, 119); margin-top: 0px !important; }
+.mathjax-block > .code-tooltip { bottom: 0.375rem; }
+#write > h3.md-focus::before { left: -1.5625rem; top: 0.375rem; }
+#write > h4.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+#write > h5.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+#write > h6.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+.md-image > .md-meta { border-radius: 3px; font-family: Consolas, "Liberation Mono", Courier, monospace; padding: 2px 0px 0px 4px; font-size: 0.9em; color: inherit; }
+.md-tag { color: inherit; }
+.md-toc { margin-top: 20px; padding-bottom: 20px; }
+.sidebar-tabs { border-bottom: none; }
+#typora-quick-open { border: 1px solid rgb(221, 221, 221); background-color: rgb(248, 248, 248); }
+#typora-quick-open-item { background-color: rgb(250, 250, 250); border-color: rgb(254, 254, 254) rgb(229, 229, 229) rgb(229, 229, 229) rgb(238, 238, 238); border-style: solid; border-width: 1px; }
+#md-notification::before { top: 10px; }
+.on-focus-mode blockquote { border-left-color: rgba(85, 85, 85, 0.12); }
+header, .context-menu, .megamenu-content, footer { font-family: "Segoe UI", Arial, sans-serif; }
+.file-node-content:hover .file-node-icon, .file-node-content:hover .file-node-open-state { visibility: visible; }
+.mac-seamless-mode #typora-sidebar { background-color: var(--side-bar-bg-color); }
+.md-lang { color: rgb(180, 101, 77); }
+.html-for-mac .context-menu { --item-hover-bg-color: #E6F0FE; }
+
+
+</style>
+</head>
+<body class='typora-export os-windows' >
+<div  id='write'  class = 'is-node'><h2><a name="飞行员常用词汇" class="md-header-anchor"></a><span>飞行员常用词汇</span></h2><p>&nbsp;</p><p><span>1、the airframe 机身,结构</span></p><p><span>2、The front (fore) part前部</span></p><p><span>3、The rear (aft) part 后部</span></p><p><span>4、</span><strong><span>port</span></strong><span> </span><strong><span>左旋*</span></strong><span>*(</span><strong></strong><span>舵</span><strong></strong><span>)** </span></p><p><span>5、</span><strong><span>starboard</span></strong><span> </span><strong><span>右旋*</span></strong><span>*(</span><strong></strong><span>舵</span><strong></strong><span>)** </span></p><p><span>6、the inboard engine or inboards 内侧发动机</span></p><p><span>7、the outboard engine or outboards 外侧发动机</span></p><p><span>8、the nose 机头</span></p><p><span>9、the belly 腹部</span></p><p><span>10、the skin 蒙皮</span></p><p><span>11、the windscreen or windshield 风挡</span></p><p><span>12、the wing 机翼</span></p><p><span>13、</span><strong><span>the trailing edge</span></strong><span> </span><strong><span>机翼后缘</span></strong><span> </span></p><p><span>14、the leading edge 机翼前缘</span></p><p><span>15、the wing tip 翼尖</span></p><p><span>16、the control surface 操纵面</span></p><p><span>17、</span><strong><span>ailerons</span></strong><span> 副翼</span></p><p><span>18、flaps (inboard flap, outboard flap, leading edge flaps) 襟翼（内侧，外侧襟翼，   </span></p><p><span>前缘缝翼）</span></p><p><span>19、</span><strong><span>spoilers</span></strong><span> (inboard\outboard spoiler)(spoiler down\up) 阻力板，扰流板（内、外</span></p><p><span>侧扰流板）（扰流板放下、打开）</span></p><p><span>20、slats 缝翼</span></p><p><span>21、</span><strong><span>elevators (elevator control tab)</span></strong><span> 升降舵（升降舵操纵片）</span></p><p><span>22、</span><strong><span>rudder (rudder control tab)</span></strong><span> 方向舵（方向舵操纵片）</span></p><p><span>23、flap angle 襟翼角</span></p><p><span>24、flap setting 襟翼调整</span></p><p><span>25、the full flap position 全襟翼位置</span></p><p><span>26、</span><strong><span>a flapless landing</span></strong><span> 无襟翼着陆</span></p><p><span>27、the landing gear 起落架</span></p><p><span>28、stabilizer 安定面</span></p><p><span>29、the nose wheel 前轮</span></p><p><span>30、gear locked 起落架锁定</span></p><p><span>31、</span><strong><span>the wheel well</span></strong><span> 起落架舱</span></p><p><span>32、the wheel door 起落架舱门</span></p><p><span>33、</span><strong><span>a tire</span></strong><span> </span><strong><span>轮胎</span></strong><span> </span></p><p><span>34、to burst 爆破</span></p><p><span>35、a deflated tire 放了气的轮胎</span></p><p><span>36、a flat tire 走了气的轮胎</span></p><p><span>37、a puncture 轮胎被扎破</span></p><p><span>38、to extend the flaps (to retract the flaps) 放下襟翼（收上襟翼）</span></p><p><span>39、</span><strong><span>gear extension</span></strong><span> (gear retraction) 起落架放下（起落架收上）</span></p><p><span>40、The gear is jammed. 起落架被卡死。</span></p><p><span>41、The flaps are jammed. 襟翼被卡死。</span></p><p><span>42、the emergency extension system 应急放下系统</span></p><p><span>43、</span><strong><span>to crank the gear down</span></strong><span> 摆动放下起落架</span></p><p><span>44、the brakes 刹车</span></p><p><span>45、disc brakes 刹车片</span></p><p><span>46、an anti-skid device 防泄装置</span></p><p><span>47、an arresting gear 制动装置</span></p><p><span>48、thrust reversers 推力换向器</span></p><p><span>49、The brakes are unreliable 刹车不可靠。</span></p><p><span>50、Braking action is poor. 刹车状况不好。</span></p><p><span>51、brake wear 刹车磨损</span></p><p><span>52、to overheat 超温（过热）</span></p><p><span>53、to bring the plane to a stop 使飞机停下</span></p><p><span>54、the passenger cabin 客舱</span></p><p><span>55、the floor 地板</span></p><p><span>56、the ceiling 顶棚</span></p><p><span>57、the galley 机上厨房</span></p><p><span>58、the toilets 厕所</span></p><p><span>59、the lounge 休息室</span></p><p><span>60、the partitions 隔墙</span></p><p><span>61、the interior fittings 机上用具</span></p><p><span>62、oxygen mask 氧气面罩</span></p><p><span>63、the cargo-hold 货舱</span></p><p><span>64、a nacelle 引擎机舱</span></p><p><span>65、a pod 发动机吊舱</span></p><p><span>66、the air inlet or intake 进气道</span></p><p><span>67、water ingestion 注水</span></p><p><span>68、the fan blades 风扇叶片</span></p><p><span>69、the LP and HP compressors 低压和高压压缩机</span></p><p><span>70、the compressor blades 压缩机叶片</span></p><p><span>71、the nozzles 喷管（嘴），排气管</span></p><p><span>72、the exhaust section 排气部分</span></p><p><span>73、thrust reversers 反推器</span></p><p><span>74、the RPM (revolution per minute) 转速（转每分）</span></p><p><span>75、to set the engine to idle 慢车</span></p><p><span>76、to give full throttle (or power) to the engine 全油门（风门）</span></p><p><span>77、to throttle up the engine 加油门</span></p><p><span>78、throttle down (or back) the engine 收油门</span></p><p><span>79、vibration 振动</span></p><p><span>80、to overheat 超温</span></p><p><span>81、The engine is low on power. 马力小</span></p><p><span>82、engine surge 发动机喘振</span></p><p><span>83、engine shutdown 停车</span></p><p><span>84、engine flame out 发动机熄火</span></p><p><span>85、</span><strong><span>engine feathered</span></strong><span> 顺桨</span></p><p><span>86、fuel system 燃油系统</span></p><p><span>87、fuel tanks 油箱</span></p><p><span>88、fuel lines 油路（管）</span></p><p><span>89、fuel pump 油泵</span></p><p><span>90、oil pressure indicators 滑油压力表</span></p><p><span>91、oil temperature indicator 滑油温度表</span></p><p><span>92、hydraulic system 液压系统</span></p><p><span>93、air-conditioning system 空调系统</span></p><p><span>94、cooling 冷却</span></p><p><span>95、heating 加热</span></p><p><span>96、the fans 吹风器</span></p><p><span>97、pressurization 增压泵</span></p><p><span>98、electrical system 电器系统</span></p><p><span>99、a DC generator 直流发电机</span></p><p><span>100、a AC generator 交流发电机</span></p><p><span>101、flight control system 飞行操纵系统</span></p><p><span>102、to dire 俯冲</span></p><p><span>103、to level off 拉平</span></p><p><span>104、to stall 失速</span></p><p><span>105、a slipping turn; a skidding turn 打地转</span></p><p><span>106、belly landing 迫降</span></p><p><span>107、force landing 强迫降落</span></p><p><span>108、vortex generators 涡流产生器</span></p><p><span>109、balance tab 平衡片</span></p><p><span>110、control column 驾驶杆</span></p><p><span>111、low range radio altimeter system 低高度无线电高度表系统</span></p><p><span>112、altitude alerting system 高度警戒系统</span></p><p><span>113、height indicator 高度表</span></p><p><span>114、radio altimeter 无线电高度表</span></p><p><span>115、receiver transmitter No1 发动机一号</span></p><p><span>116、Doppler navigation system多卜勒导航系统</span></p><p><span>117、Ground speed and drift indicator 地速和偏流显示器</span></p><p><span>118、transponder receiver 应答机接收机</span></p><p><span>119、transponder decoder 应答机译码器</span></p><p><span>120、transponder encoder 应答机编码器</span></p><p><span>121、transponder transmitter 应答机发射机</span></p><p><span>122、transponder modulator 应答机调制器</span></p><p><span>123、Reply mode A or B. 回答方式A或B。</span></p><p><span>124、Altitude interrogation mode C 高度询问方式C。</span></p><p><span>125、Identity interrogation mode B 识别询问方式B。</span></p><p><span>126、code indicator 代码显示器</span></p><p><span>127、transponder selector switch 应答机显示电门</span></p><p><span>128、code selector switches 代码选择电门</span></p><p><span>129、altitude reporting switch 高度报告电门</span></p><p><span>130、mode switch 方式电门</span></p><p><span>131、Identification button 识别按钮</span></p><p><span>132、weather radar 气象雷达</span></p><p><span>133、DME indicator 测距机指示机</span></p><p><span>134、Loran receiver 罗兰接受机</span></p><p><span>135、interphone system 内话系统</span></p><p><span>136、passenger address system 广播系统</span></p><p><span>137、HF communication systems 高频电讯系统</span></p><p><span>138、UHF communication systems 甚高频通讯系统</span></p><p><span>139、voice recorder system 录音机系统</span></p><p><span>140、navigation system 导航系统</span></p><p><span>141、Pilot’s Mach Airspeed Indicators 驾驶员的马赫空速表</span></p><p><span>142、Vertical speed indicators 垂直空速表</span></p><p><span>143、Flight director indicator 飞行指示仪</span></p><p><span>144、Course deviation indicator 航道罗盘</span></p><p><span>145、air speed indicator 空速表</span></p><p><span>146、Automatic pilot 自动驾驶</span></p><p><span>147、Anti-icing system 防冰系统</span></p><p><span>148、throttle system 油门系统</span></p><p><span>149、tachometer indicator 转速表</span></p><p><span>150、Engine vibration indicator 发动机震动指示表</span></p><p><span>151、Forward thrust reverser controls 前反推装置操纵</span></p><p><span>152、Aft thrust reverser controls 后反推装置操纵</span></p><p><span>153、engine oil system 发动机滑油系统</span></p><p><span>154、Oil temperature indicator system 滑油温度指示系统</span></p><p><span>155、Oil quantity indicating system 滑油油量指示系统</span></p><p><span>156、oil pressure indicator 滑油压力表</span></p><p><span>157、starting system 启动系统</span></p><p><span>158、Emergency exit hatch 紧急出口窗</span></p><p><span>159、Outward opening emergency exit hatch外开式紧急出口门</span></p><p><span>160、Door warning system 门警系统</span></p><p><span>161、Landing gear control handle 起落架操纵手柄</span></p><p><span>162、Control handle up, gear retracting door open. 操纵手柄向上，起落架收上时舱 </span></p><p><span>门打开。</span></p><p><span>163、Control handle up, gear up and locked, door closed. 操纵手柄向上起落架收上  </span></p><p><span>并锁住舱门关闭。</span></p><p><span>164、Landing gear warning horn 起落架警告喇叭</span></p><p><span>165、Main (Nose) gear emergency extension system 主（前）起落架紧急放下系统</span></p><p><span>166、nose wheel steering control 前轮转弯操纵</span></p><p><span>167、Nose wheel steering hydraulic system 前轮转弯液压系统</span></p><p><span>168、Brake hydraulic system 液压刹车</span></p><p><span>169、Pneumatic brake system 空气刹车系统</span></p><p><span>170、Parking brake 停留刹车</span></p><p><span>171、fuel receptacle 加油接头</span></p><p><span>172、Pressure fueling station 压力加油舱口</span></p><p><span>173、usable fuel 可用燃油</span></p><p><span>174、main tank 主油箱</span></p><p><span>175、reserve tank 副油箱</span></p><p><span>176、fuel tank arrangement 燃油箱分布</span></p><p><span>177、fuel boost pump 增压泵</span></p><p><span>178、fuel quantity indicator 油量指示泵</span></p><p><span>179、fuel tank filler cap assemblies 燃油箱加油口盖</span></p><p><span>180、filler cap adapter 加油口盖接口</span></p><p><span>181、drip stick 量油尺</span></p><p><span>182、hydraulic system 液力系统</span></p><p><span>183、Auxiliary hydraulic pump 副液力泵</span></p><p><span>184、air condition system 空调系统</span></p><p><span>185、main cabin air condition 主舱空调</span></p><p><span>186、engine fire extinguishing system 发动机灭火系统</span></p><p><span>187、fire extinguisher bottle 灭火机</span></p><p><span>188、fire detection system 火警探测系统</span></p><p><span>189、pitot tube anti-icing 空速管防冰</span></p><p><span>190、control cabin window anti-icing system 驾驶舱风挡防冰系统</span></p><p><span>191、De-icing system (De-icer) 除冰系统（除冰器）</span></p><p><span>192、window panes pilot’s (captain’s) 正驾驶风挡玻璃</span></p><p><span>193、window heat control unit 风挡加温控制器</span></p><p><span>194、windshield wiper system 风挡括水系统</span></p><p><span>195、captain’s windshield wiper 正驾驶风挡括水</span></p><p><span>196、wing anti-icing 机翼防冰</span></p><p><span>197、autopilot 自动驾驶</span></p><p><span>198、external power receptacle 外部电源插座</span></p><p><span>199、forward toilet drain (Aft toilet drain) 前厕所泄放口（后厕所泄放口）</span></p><p><span>200、Pneumatic ground service air connection 地面空气充气接头</span></p><p><span>201、Water system filler 加水口</span></p><p><span>202、Conditioned air ground system connection 空调系统地面接头</span></p><p><span>203、control system 操纵系统</span></p><p><span>204、elevator shaking 升降舵松动</span></p><p><span>205、Aileron response sluggish. 副翼反应迟钝。</span></p><p><span>206、Aircraft rolling right and left. 飞机左右摇摆。</span></p><p><span>207、Cockpit wind shield broken. 驾驶舱挡风玻璃破裂。</span></p><p><span>208、rate of climb indicator 升降速率表</span></p><p><span>209、elevator trim indicator 升降舵调整片指示表</span></p><p><span>210、gyro horizon 陀螺地平仪</span></p><p><span>211、Hydraulic pump failure. 液压泵失效。</span></p><p><span>212、electric pump 电动泵</span></p><p><span>213、turbo pump 涡轮泵</span></p><p><span>214、auxiliary pump 辅助泵</span></p><p><span>215、nose taxi lamp 前滑行灯</span></p><p><span>216、right navigation lamp 右航行灯</span></p><p><span>217、Anti-collision lights (flashing beacon) 防撞灯（闪光灯）</span></p><p><span>218、weather radar scanner antenna 雷达扫描天线</span></p><p><span>219、antenna tilt control 天线俯仰控制</span></p><p><span>220、May we go on board to see your cockpit? 我们上飞机看看驾驶舱好吗？</span></p><p><span>221、May we go on board to visit your aircraft? 我们上飞机参观一下好吗？</span></p><p><span>222、We want to know some data (performance) of this kind of aircraft, such as:我们   </span></p><p><span>相了解这种飞机的一些数据，比如：</span></p><p><span>223、wing span 翼展</span></p><p><span>224、length overall 全长</span></p><p><span>225、height overall 全高</span></p><p><span>226、wheel track (undercarriage track) 主轮距</span></p><p><span>227、wheel base 前后轮距</span></p><p><span>228、the minimum of the steering (turning) radius (minimum ground turning radius)</span></p><p><span>  最小转弯半径（地面最小转弯半径）</span></p><p><span>229、the height of the cabin door (passenger door’s height to sill) 客舱门离地高度</span></p><p><span>230、the size of the cabin door (passenger door’s height and width) 客舱门尺寸</span></p><p><span>231、maximum ramp weight 最大滑行重量</span></p><p><span>232、basic operating weight 基本重量</span></p><p><span>233、maximum take-off weight 最大起飞重量</span></p><p><span>234、maximum landing weight 最大着陆重量</span></p><p><span>235、maximum zero-fuel weight empty 最大无油重量</span></p><p><span>236、maximum payload 最大业载</span></p><p><span>237、fuel load (reserve fuel \residual fuel) 载油量（备份油量、剩余油量）</span></p><p><span>238、the total weight of fuel, fuel consumption and endurance 总燃油量耗油量与续  </span></p><p><span>航时间</span></p><p><span>239、maximum level speed 最大平飞速度</span></p><p><span>240、maximum cruising speed 最大巡航速度</span></p><p><span>241、economical cruising speed 经济巡航速度</span></p><p><span>242、long-range cruising speed 远程巡航速度</span></p><p><span>243、stalling speed (flaps down, up\at maximum landing weight\at sea level) 失速速  </span></p><p><span>度（襟翼放下或收上，以最大着陆重量，在海平面）</span></p><p><span>244、never-exceed speed extreme speed 极限速度</span></p><p><span>245、service ceiling (practical ceiling\operating ceiling) 实用升限（使用升限）</span></p><p><span>246、take-off run 起飞滑跑长度</span></p><p><span>247、landing run 着陆滑跑长度</span></p><p><span>248、take-off distance 起飞距离（使用场地长度）</span></p><p><span>249、landing distance 着陆距离（使用场地长度）</span></p><p><span>250、the maximum and normal rate of climb and descending 最大与正常上升、下降率</span></p><p><span>251、the maximum routing (range) 最大航程</span></p><p><span>252、the number of passenger seats 旅客座位数目</span></p><p><span>253、the maximum take-off power 最大起飞功率（推力）</span></p><p><span>254、the maximum except take-off power 额定功率</span></p><p><span>255、surplus power 剩余功率</span></p><p><span>256、take-off characteristics 起飞性能</span></p><p><span>257、radius of action 活动半径</span></p><p><span>258、aerodrome practice (test flight\trial race) 本场飞行训练（试飞、试航）</span></p><p><span>259、ground  loop 打地转</span></p><p><span>260、nose over 拿大顶</span></p><p><span>261、crash onto runway 摔毁在跑道上</span></p><p><span>262、drift off the R/W (running off the edge of the R/W) （侧风影响）偏离跑道 （飞机偏出轨道）</span></p><p><span>263、short of R/W (undershoot run) 场外接地（提前接地）</span></p><p><span>264、over run the R/W (run off\out of the R/W) 冲出跑道（滑跑冲出跑道）</span></p><p><span>265、sideslip landing 带侧滑着陆</span></p><p><span>266、single engine landing (two-engine landing) 单发着陆（双发着陆）</span></p><p><span>267、belly landing (All-gear-up landing) 机腹着陆</span></p><p><span>268、crash landing 摔机着陆（尤指机腹着陆）</span></p><p><span>269、emergency landing 紧急着陆</span></p><p><span>270、forced landing (distress landing) 强迫着陆</span></p><p><span>271、abnormal landing 不正常着陆</span></p><p><span>272、cross wind landing 侧风着陆</span></p><p><span>273、down wind landing (upwind landing) 顺风着陆（顶风着陆）</span></p><p><span>274、tail-wind landing (head-wind landing) 顺风着陆（顶风着陆）</span></p><p><span>275、heavy-weight landing 大载重着陆</span></p><p><span>276、high-speed landing 大速度着陆</span></p><p><span>277、short landing 短距滑跑着陆或是目测低的着陆</span></p><p><span>278、short-field landing (short approach) 短跑道着陆（小航线进场着陆）</span></p><p><span>279、one-wheel landing 单轮着陆</span></p><p><span>280、off-field landing (outside landing) 场外着陆</span></p><p><span>281、touch and go landing (follow through take-off) 连续起飞</span></p><p><span>282、full-stop landing 全跑道着陆（滑跑到全停的着陆）</span></p><p><span>283、taxi-back landing 滑回的着陆（着陆后滑回起飞线，区别于连续起飞着陆）</span></p><p><span>284、abandon the take-off (abort the take-off) 中断起飞</span></p><p><span>285、abandoned (aborted\refused\rejected) take-off 中断的起飞</span></p><p><span>286、reject the take-off 停止起飞</span></p><p><span>287、all-engine (power units) operating take-off 全发起飞</span></p><p><span>288、engine cut out take-off 单发停车起飞</span></p><p><span>289、cross wind take-off 侧风起飞</span></p><p><span>290、down wind take-off 顶风起飞</span></p><p><span>291、up wind take-off 逆风起飞</span></p><p><span>292、full-flap take-off (flapless take-off) 全襟翼起飞（不放襟翼起飞）</span></p><p><span>293、full throttle take-off 全油门起飞</span></p><p><span>294、full power take-off 全推力（最大功率）起飞</span></p><p><span>295、rolling (running) take-off 直接起飞（不在跑道头停留的起飞）</span></p><p><span>296、spot take-off 定点起飞</span></p><p><span>297、minimum interval take-off 保持最小间隙起飞</span></p><p><span>298、maximum-performance take-off (short field take-off) 最大性能起飞（指滑跑  </span></p><p><span>距离最短的起飞、短距起飞）</span></p><p><span>299、marginal take-off 安全边缘起飞（没有足够安全保证的起飞）</span></p><p><span>300、full-gross-weight take-off 最大起飞重量起飞</span></p><p><span>301、full-loaded take-off 满载起飞</span></p><p><span>302、heavy weight take-off 重载起飞</span></p><p><span>303、high gross weight take-off 重载起飞，大起飞重量起飞</span></p><p><span>304、overload take-off 超载起飞</span></p><p><span>305、flight (flying) trim 飞行配平</span></p><p><span>306、A/C trim 飞机配平</span></p><p><span>307、automatic trim 自动配平</span></p><p><span>308、level flight (horizontal flight) 平飞</span></p><p><span>309、level turning 平飞转弯</span></p><p><span>310、shallow (smooth\wide\gentle) turn bank 小坡度转弯（坡度小于25度）</span></p><p><span>311、medium turn bank 中坡度转弯（坡度25-45度）</span></p><p><span>312、steep (sharp) turn back 大坡度转弯（坡度45-70度）</span></p><p><span>313、normal turn 标准转弯，正常转弯（转弯角速度为3度/秒，坡度约为15度）</span></p><p><span>314、turning point (bank\time) 转弯点（坡度、时间）</span></p><p><span>315、pivoting turn 原地转弯（指飞机在地面上）</span></p><p><span>316、taxiing turn 滑行转弯</span></p><p><span>317、cross wind turn 一转弯</span></p><p><span>318、down wind turn 二转弯</span></p><p><span>319、turn to base (turning base) 三转弯</span></p><p><span>320、turn to final (turning final\final turn) 四转弯</span></p><p><span>321、base turn 三四转弯（连续做三四转弯）</span></p><p><span>322、approach end of the runway 跑道进入着陆端</span></p><p><span>323、down wind end of the runway 跑道顺风端</span></p><p><span>324、departure end of the runway 跑道起飞离地端</span></p><p><span>325、upwind end of the runway 跑道逆风端</span></p><p><span>326、take-off end of the runway 跑道起飞端</span></p><p><span>327、touch down end of the runway 跑道着陆接地端</span></p><p><span>328、rollout (stop) end of the runway 着陆跑道停止端</span></p><p><span>329、accident 事故</span></p><p><span>330、grade of accident 事故等级</span></p><p><span>331、serious accident\catastrophe\fatal accident\disastrous accident 一等事故；机毁   </span></p><p><span>人亡事故</span></p><p><span>332、accident 二等事故</span></p><p><span>333、break down minor accident 三等事故；一般事故</span></p><p><span>334、accident report 事故报告</span></p><p><span>335、air accident investigation 飞行事故调查</span></p><p><span>336、field investigation 野外调查、事故现场调查</span></p><p><span>337、on-the-spot investigation 事故现场调查</span></p><p><span>338、accident data recorder 飞行事故记录器</span></p><p><span>339、crash recorder 事故记录器</span></p><p><span>340、accident data recorder (tape) 飞行事故记录器（记录带）</span></p><p><span>341、crash-protected recorder 能防毁的飞行记录器</span></p><p><span>342、stainless steel tape flight recorder 不锈钢带飞行记录器</span></p><p><span>343、cockpit recorder 驾驶舱内记录器</span></p><p><span>344、cockpit voice recorder 驾驶舱内录音机</span></p><p><span>345、tower tape 塔台录音磁带</span></p><p><span>346、transfer recording 复制录音</span></p><p><span>347、TV recording 电视录像 </span></p><p><span>348、video tape recorder 磁带录像机 </span></p><p><span>349、video recording 录像 </span></p><p><span>350、video tape recording 磁带录像 </span></p><p><span>351、air (aviation) accident\flight (flying) accident 飞行事故、空中失事</span></p><p><span>352、avoidable accident (preventable accident) 可避免的事故（可防止的事故）</span></p><p><span>353、collision accident (mid-air collision accident\air-to-air collision) 空中相撞事故</span></p><p><span>354、near-miss (near collision) 危险接近</span></p><p><span>355、potential accident （飞行）事故征候</span></p><p><span>356、human error accident 操作错误事故（人为事故）</span></p><p><span>357、pilot-caused accident (pilot factor accident\pilot error accident) 飞行员责任事   </span></p><p><span>故（驾驶错误事故）</span></p><p><span>358、domestic operation accident international operation accident</span></p><p><span>   国内航线飞行事故（国际航线飞行事故）</span></p><p><span>359、gear accident (gear-up landing accident)起落架故障飞行事故（未放起落架着  </span></p><p><span>陆事故）</span></p><p><span>360、gear retraction accident （地面）收起落架事故</span></p><p><span>361、gross overload accident 超载事故</span></p><p><span>362、high-ground-hitting accident (collide with high ground\crash into high ground)</span></p><p><span>   与高地相撞事故（撞在高地上毁坏）</span></p><p><span>363、aircraft-mountain collision 飞机撞山</span></p><p><span>364、ground accident 地面事故</span></p><p><span>365、taxi accident (taxi collision accident) 滑行事故（滑行相撞事故）</span></p><p><span>366、head-on collision accident （空中）对头相撞</span></p><p><span>367、take-off accident 起飞事故</span></p><p><span>368、turbulence accident 尾流事故</span></p><p><span>369、landing accident 着陆事故</span></p><p><span>370、stalling (stall out) accident 失速事故</span></p><p><span>371、survival (survivable) accident 人员幸存事故</span></p><p><span>372、unexplained accident 原因不明的飞行事故</span></p><p><span>373、accident-free 无事故的 3</span></p><p><span>74、explosive accident （空中）爆炸事故</span></p><p><span>375、material failure accident 设备故障飞行事故</span></p><p><span>376、man-made accident 人为的事故</span></p></div>
+</body>
+</html>
