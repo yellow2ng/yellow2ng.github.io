@@ -5,8 +5,16 @@
 ### 丨基础概念
 
 - 奥迪、宝马、奔驰的四驱系统分别为quattro、xdrive和4matic代表特性为高技术、操控和舒适性。本田的 SH-AWD 和大众的 4MOTION领衔四驱系统的第二梯队；
+
 - 常见的补胎方法为胶条补胎（便宜）、贴片法（广泛）、蘑菇钉（先进）和火补（淘汰）；
+
 - JDM即日本国内市场（Japanese domestic market）。就是为日本国内市场生产的车辆及其零配件，有时也指汽车及摩托车爱好者聚集的地方。
+
+- 汽车改装厂：
+
+  奔驰：部件改装劳伦士（LORINSER），性能改装巴博斯（Brabus），专业改装卡尔森（Carlsson）；
+  奥迪：mtm性能改造，ABT的影响力更大；
+  宝马：G-Power性能改装，其余的还有AC Schnitzer、哈曼Hamann、Alpina阿尔宾娜；
 
 
 
